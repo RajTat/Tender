@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Tender</string>
+    <string name="hello_word">hello world</string>
+    <string name="welcomeMessageText">Welcome to Tender</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_pin">PIN</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_pin">This password is too short</string>
+    <string name="error_incorrect_pin">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing pin
+        completions."
+    </string>
+    <string name="title_activity_login_">Login_Activity</string>
+    <string name="initialLoginFeedback">Enter your four digit PIN or register a new four digit PIN</string>
+    <string name="registerTxt">Register</string>
+    <string name="signInTxt">Sign In</string>
+    <string name="patientTxt">Patient</string>
+    <string name="therapistTxt">Therapist</string>
+    <string name="submitTxt">Submit</string>
+    <string name="loginTypeTxt">As a</string>
+
+    <string name="streetTxt">Street Address</string>
+    <string name="lastNameTxt">Last Name</string>
+    <string name="firstNameTxt">First Name</string>
+    <string name="phoneNumTxt">Phone Number</string>
+    <string name="emailTxt">Email</string>
+    <string name="cityTxt">City</string>
+    <string name="stateTxt">State</string>
+    <string name="zipTxt">ZIP</string>
+
+
+    <!-- Strings for the Calendar -->
+    <string name="Calendar_Button">Get Events</string>
+    <string name="Goto_Calendar">Calendar View</string>
+    <string name="Create_Appointment">Create Appointment</string>
+    <string name="Query_Calendar">Query Calendar</string>
+
+</resources>

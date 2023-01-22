@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tender.team08.cs246.tender.Login_Activity">
+
+    <EditText
+        android:id="@+id/pinTextView"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="PIN (4digits)"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMessageView" />
+
+    <EditText
+        android:id="@+id/firstEditTxt"
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="120dp"
+        android:ems="10"
+        android:hint="@string/firstNameTxt"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:nextFocusDown="@id/lastEditTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastEditTxt"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/lastNameTxt"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:nextFocusDown="@id/emailEditTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstEditTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="247dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/emailTxt"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@id/phoneEditTxt"
+        android:singleLine="true"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstEditTxt" />
+
+    <EditText
+        android:id="@+id/phoneEditTxt"
+        android:layout_width="204dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/phoneNumTxt"
+        android:inputType="phone"
+        android:nextFocusDown="@id/streetEditTxt"
+        android:singleLine="true"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastEditTxt" />
+
+    <EditText
+        android:id="@+id/streetEditTxt"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/streetTxt"
+        android:inputType="textPostalAddress"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:nextFocusDown="@id/cityEditTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEditTxt" />
+
+    <EditText
+        android:id="@+id/cityEditTxt"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="264dp"
+        android:ems="10"
+        android:hint="@string/cityTxt"
+        android:inputType="text"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:nextFocusDown="@id/stateEditTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/stateEditTxt"
+        android:layout_width="73dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:hint="@string/stateTxt"
+        android:inputType="text"
+        android:nextFocusDown="@id/zipEditTxt"
+        android:singleLine="true"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cityEditTxt"
+        app:layout_constraintStart_toEndOf="@+id/cityEditTxt" />
+
+    <EditText
+        android:id="@+id/zipEditTxt"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/zipTxt"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:nextFocusDown="@id/pinTextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stateEditTxt"
+        app:layout_constraintStart_toEndOf="@+id/stateEditTxt" />
+
+    <TextView
+        android:id="@+id/mainMessageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_sign_in"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedbackMsgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/initialLoginFeedback"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinTextView" />
+
+    <ToggleButton
+        android:id="@+id/signInToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginTop="51dp"
+        android:checked="false"
+        android:text="@string/signInTxt"
+        android:textOff="Sign In"
+        android:textOn="Register"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="252dp"
+        android:layout_marginTop="48dp"
+        android:onClick="submit"
+        android:text="@string/submitTxt"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
